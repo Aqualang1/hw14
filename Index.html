@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/beauty.css">
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <nav>
+            <ul class="navbar">
+                <li>Delivery</li>
+                <li>Payment</li>
+                <li>Reviews</li>
+                <li>FAQ</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div class="contacts-bar">
+            <div id="logo"><img src="./images/Group 2.jpg" alt="beauty-logo">
+                <p><b>beauty</b></p>
+            </div>
+            <div class="contacts">
+                <span id="phone-num"><b>1 (213) 123-45-67</b></span>
+                <button id="call-btn">Call back</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <nav>
+            <div>
+                <ul class="navbar">
+                    <li>Salon</li>
+                    <li>Barbershop</li>
+                    <li>Manicure</li>
+                    <li>Pedicure</li>
+                    <li>Massage</li>
+                    <li>Furniture</li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="chair-area">
+            <article class="chair-description">
+                <h1>Super chair</h1>
+                <p>
+                    The text of the action always reflects the essence, and not just
+                    chatter, so be careful
+                </p>
+                <button id="more-btn">More</button>
+            </article>
+        </div>
+    </section>
+    <section class="navbar-wrapper">
+        <ul class="panel">
+            <h1>Special offers</h1>
+            <ul class="shop">
+                <li class="item">
+                    <img src="./images/item-chair.png" alt="item">
+                    <p>Hairdressing chair "Norm" hydraulic</p>
+                    <h4>300$</h4>
+                    <button class="btn">Buy</button>
+                </li>
+                <li class="item">
+                    <img src="./images/item-chair.png" alt="item">
+                    <p>Hairdressing chair "Norm" hydraulic</p>
+                    <h4>300$</h4>
+                    <button class="btn">Buy</button>
+                </li>
+                <li class="item">
+                    <img src="./images/item-chair.png" alt="item">
+                    <p>Hairdressing chair "Norm" hydraulic</p>
+                    <h4>300$</h4>
+                    <button class="btn">Buy</button>
+                </li>
+                <li class="item">
+                    <img src="./images/item-chair.png" alt="item">
+                    <p>Hairdressing chair "Norm" hydraulic</p>
+                    <h4>300$</h4>
+                    <button class="btn">Buy</button>
+                </li>
+            </ul>
+            <div class="cards">
+                <div class="banner">
+                    <div class="banner-content">
+                        <h3>Get bonuses and gifts</h3>
+                        <p>Every month we play
+                            $1000 for our clients</p>
+                        <input id="field" type="text" placeholder="enter your e-mail">
+                    </div>
+                    <img id="banner-img" src="./images/convert.jpg" alt="convert">
+                </div>
+                <div class="banner">
+                    <div class="banner-content">
+                        <h3>Visit us</h3>
+                        <p>Over 300 stores
+                            throughout the USA</p>
+                        <button id="more-btn">Store map</button>
+                    </div>
+                    <img id="banner-img" src="./images/truck.jpg" alt="truck">
+                </div>
+            </div>
+            <div class="impuls-wrapper">
+                <form id="form" class="hidden" name="order">
+                    <h2>You can make an order here: </h2>
+                    <label>enter name <input type="text" name="full_name" id="name"></label>
+                    <label>enter surname <input type="text" name="full_name" id="surname"></label>
+                    <div id="payment">
+                        <p>choose the pay way</p>
+                        <label><input type="radio" name="payment" value="card">bank card</label>
+                        <label><input type="radio" name="payment" value="cash">cash (on post office)</label>
+                    </div>
+                    <label>choose town
+                        <select id="city" name="city">
+                            <option value="Kyiv">Kyiv</option>
+                            <option selected value="Uman">Uman</option>
+                            <option value="Kherson">Kherson</option>
+                        </select>
+                    </label>
+                    <label>choose the store from the list
+                        <select id="store" name="store">
+                            <option value="base1">base1</option>
+                            <option value="base2">base2</option>
+                            <option value="base3">base3</option>
+                        </select>
+                    </label>
+                    <label>
+                        choose quantity
+                        <select id="quantity" name="quantity">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                    <textarea name="comment" id="comment" cols="15" rows="5" form="order" placeholder="you can add some comment if you need it"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+
+                <!-- <form id="order" class="hidden" name="order">
+                    <h2>You can make an order here: </h2>
+                    <label>enter name <input type="text" name="name" required></label>
+                    <label>enter surname <input type="text" name="surname" required></label>
+                    <label>choose town
+                        <select id="city" name="city">
+                            <option value="Kyiv">Kyiv</option>
+                            <option selected value="Uman">Uman</option>
+                            <option value="Kherson">Kherson</option>
+                        </select>
+                    </label>
+                    <label>choose the store from the list
+                        <select id="store" name="store">
+                            <option value="base1">base1</option>
+                            <option value="base2">base2</option>
+                            <option value="base3">base3</option>
+                        </select>
+                    </label>
+                    <h4>choose the pay way</h4>
+                    <label><input type="radio" name="payment" value="card" required>bank card </label>
+                    <label><input type="radio" name="payment" value="cash" required>cash (on post office)
+                    </label>
+                    <label>
+                        choose quantity
+                        <select name="quantity">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                    <textarea name="comment" id="comment" cols="15" rows="5" form="order"
+                        placeholder="you can add some comment if you need it"></textarea>
+                    <input type="submit" value="Submit">
+                </form> -->
+                <ul class="impuls">
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                    <li><img src="./images/impuls.jpg" alt="impuls"></li>
+                </ul>
+            </div>
+
+            <h1>Have you recently viewed</h1>
+            <ul class="shop">
+                <li class="item">
+                    <img src="./images/item-chair.png" alt="item">
+                    <p>Hairdressing chair "Norm" hydraulic</p>
+                    <h4>300$</h4>
+                    <button class="btn">Buy</button>
+                </li>
+                <li class="item">
+                    <img src="./images/item-chair.png" alt="item">
+                    <p>Hairdressing chair "Norm" hydraulic</p>
+                    <h4>300$</h4>
+                    <button class="btn">Buy</button>
+                </li>
+                <li class="item">
+                    <img src="./images/item-chair.png" alt="item">
+                    <p>Hairdressing chair "Norm" hydraulic</p>
+                    <h4>300$</h4>
+                    <button class="btn">Buy</button>
+                </li>
+                <li class="item">
+                    <img src="./images/item-chair.png" alt="item">
+                    <p>Hairdressing chair "Norm" hydraulic</p>
+                    <h4>300$</h4>
+                    <button class="btn">Buy</button>
+                </li>
+            </ul>
+
+            </div>
+    </section>
+    <footer>
+        <div>
+            <h3>Popular categories</h3>
+            <ul>
+                <li>Hozzles</li>
+                <li>Tools</li>
+                <li>Gel polishes</li>
+                <li>Design</li>
+                <li>Building</li>
+                <li>Equipment</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Popular categories</h3>
+            <ul>
+                <li>Hozzles</li>
+                <li>Tools</li>
+                <li>Gel polishes</li>
+                <li>Design</li>
+                <li>Building</li>
+                <li>Equipment</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Popular categories</h3>
+            <ul>
+                <li>Hozzles</li>
+                <li>Tools</li>
+                <li>Gel polishes</li>
+                <li>Design</li>
+                <li>Building</li>
+                <li>Equipment</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Popular categories</h3>
+            <ul>
+                <li>Hozzles</li>
+                <li>Tools</li>
+                <li>Gel polishes</li>
+                <li>Design</li>
+                <li>Building</li>
+                <li>Equipment</li>
+            </ul>
+        </div>
+    </footer>
+    <section>
+        <div class="contacts-bar">
+            <ul class="social">
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="./images/yt-logo.jpg"
+                            alt="youtube"></a></li>
+                <li><a href="https://uk-ua.facebook.com/" target="_blank"><img src="./images/fb-logo.jpg"
+                            alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"></a><img src="./images/insta-logo.jpg"
+                        alt="instagram"></li>
+            </ul>
+
+            <div class="contacts">
+                <span id="phone-num"><b>1 (213) 123-45-67</b></span>
+                <button id="call-btn">Call back</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bottom-line">
+            <div>Best Store (c) 2019 All rights reserved. Online store of equipment for beauty salons</div>
+            <div>Privacy Policy</div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
